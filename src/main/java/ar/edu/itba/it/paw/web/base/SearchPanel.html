@@ -1,0 +1,58 @@
+<html>
+<body>
+	<wicket:panel>
+		<div class="span3" id="search">
+			<div class="hero-unit">
+				<form wicket:id="searchForm" class="form-vertical">
+					<fieldset>
+						<legend>
+							<wicket:message key="advancedSearch">Bœsqueda</wicket:message>
+						</legend>
+						<div class="control-group">
+							<label class="control-label" for="select01"><wicket:message
+									key="operationType">Operación</wicket:message>:</label>
+							<div class="controls">
+								<select wicket:id="operationType" class="span2" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="select01"><wicket:message
+									key="currency">Moneda</wicket:message>:</label>
+							<div class="controls">
+								<select wicket:id="currency" class="span2" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="select01"><wicket:message
+									key="propertyType">Inmueble</wicket:message>:</label>
+							<div class="controls">
+								<select wicket:id="propertyType" class="span2" />
+							</div>
+						</div>
+						<div class="control-group">
+							<label class="control-label" for="input01"><wicket:message
+									key="price">Precio</wicket:message>:</label>
+							<div class="controls">
+								<input wicket:id="priceFrom" type="text"
+									class="span2" />
+								<div wicket:id="priceFromError" class="error" />
+								<input wicket:id="priceTo" type="text" 
+									class="span2" />
+								<div wicket:id="priceToError" class="error" />
+							</div>
+
+						</div>
+						<div class="control-group">
+							<div class="controls">
+								<button wicket:id="search" type="submit" class="btn btn-primary">
+									<wicket:message key="search">Buscar</wicket:message>
+								</button>
+							</div>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

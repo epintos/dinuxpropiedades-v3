@@ -1,0 +1,20 @@
+@CHARSET "UTF-8";
+
+@import "bootstrap.min.css";
+
+@import "header.css";
+
+@import "style.css";
+
+.formRow {
+	padding-top: 20px;
+	padding-left: 40px;
+}
+
+.formHero span.required {
+	color: #F8E6E0;
+}
+
+#services input {
+	float: left;
+}

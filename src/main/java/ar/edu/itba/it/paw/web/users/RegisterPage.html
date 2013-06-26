@@ -1,0 +1,125 @@
+<html>
+<body>
+	<wicket:extend>
+		<div class="container">
+			<div class="row" id="content">
+				<div class="span10 offset1">
+					<div class="hero-unit formHero">
+						<form class="form-vertical" wicket:id="registerForm">
+							<fieldset>
+								<legend id="formTitle">
+									<wicket:message key="register">Regístrate</wicket:message>
+								</legend>
+								<div class="row formRow">
+									<div class="span3 offset1">
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="userType">Tipo de usuario</wicket:message>:</label>
+											<div class="controls">
+												<select wicket:id="userType" />
+												<div wicket:id="userTypeError" class="error" />
+											</div>
+											<label class="control-label" for="input01"><wicket:message
+													key="name">Nombre</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="name" type="text" class="span2" /> <span
+													class="required"> *</span>
+												<div wicket:id="nameError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="surname">Apelido</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="surname" type="text" class="span2" /> <span
+													class="required"> *</span>
+												<div wicket:id="surnameError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="email">Email</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="email" type="text" class="span2"
+													 /> <span
+													class="required"> *</span>
+												<div wicket:id="emailError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="phone">Teléfono</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="phone" type="text" class="span2" /> <span
+													class="required"> *</span>
+												<div wicket:id="phoneError" class="error" />
+											</div>
+											<span class="required"><wicket:message
+													key="requiredField">(*) Campo obligatorio</wicket:message>.</span>
+										</div>
+									</div>
+									<div class="span3 offset1">
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="username">Nombre de
+											Usuario</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="username" type="text" class="span2" /> <span
+													class="required"> *</span>
+												<div wicket:id="usernameError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="password">Contraseña</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="password" type="password" class="span2" />
+												<span class="required"> *</span>
+												<div wicket:id="passwordError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<label class="control-label" for="input01"><wicket:message
+													key="confPassword">Confirme
+											Contraseña</wicket:message>:</label>
+											<div class="controls">
+												<input wicket:id="confPassword" type="password"
+													class="span2" /> <span class="required"> *</span>
+												<div wicket:id="passwordConfirmError" class="error" />
+											</div>
+
+										</div>
+										<div class="control-group">
+											<input id="photoInput" class="span3" type="file"
+												wicket:id="file" />
+										</div>
+										<div>
+											<img wicket:id="captchaImage" src="#" /> <br />
+											<br /> <input type="text" wicket:id="code" class="span2" /> <span class="required"> *</span>
+											<div wicket:id="captchaError" class="error" />
+										</div>
+										<div class="control-group">
+											<div class="controls">
+												<button wicket:id="register" type="submit"
+													class="btn btn-primary">
+													<wicket:message key="register">Registrate</wicket:message>
+												</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</wicket:extend>
+</body>
+</html>

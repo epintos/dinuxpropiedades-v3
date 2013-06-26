@@ -1,0 +1,28 @@
+#fcontent {
+	padding: 0 0px 20px 30px;
+}
+
+hr {
+	border: none;
+	height: 1px;
+	line-height: 1px;
+	/* 	background: #E5E5E5; */
+	margin-bottom: 20px;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 7px 0;
+}
+
+a {
+	outline: none;
+}
+
+#fcontent a img {
+	border: 1px solid #BBB;
+	padding: 2px;
+	margin: 10px 20px 10px 0;
+	vertical-align: top;
+}

@@ -1,0 +1,38 @@
+<html>
+<body>
+	<wicket:extend>
+		<div wicket:id="searchPanel" />
+		<div class="span8 offset1">
+			<p wicket:id="empty">No se encontraron resultados.</p>
+			<div wicket:id="agency" class="row">
+				<div class="span8">
+					<div class="hero-unit searchItem">
+						<div class="row">
+							<div class="span2">
+								<ul class="thumbnails">
+									<li class="span2"><a href="#" class="thumbnail"> <img
+											wicket:id="photo" class="mainPhoto" src="#" alt="">
+									</a></li>
+								</ul>
+							</div>
+							<div class="span4">
+								<span class="infoTitle"><wicket:message key="name">Nombre</wicket:message>:</span>
+								<span wicket:id="name"></span> <br> <span
+									class="infoTitle"><wicket:message key="publications">Publicaciones</wicket:message>:</span>
+								<span wicket:id="publications">5</span>
+								<br> <i class="icon-plus-sign"></i> <a
+									wicket:id="view_publications" href="#"><wicket:message
+										key="view_publications">Ver
+									Publicaciones</wicket:message></a> <br>
+
+							</div>
+							<div class="span3"></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

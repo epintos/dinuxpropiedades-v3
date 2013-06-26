@@ -1,0 +1,17 @@
+@CHARSET "UTF-8";
+
+@import "bootstrap.min.css";
+@import "header.css";
+@import "style.css";
+
+.formRow {
+	padding-top: 20px;
+}
+
+.hero-unit form span.required {
+	color: #F8E6E0;
+}
+
+#photoInput{
+	background-color:transparent;
+}

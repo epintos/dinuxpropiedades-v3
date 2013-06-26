@@ -1,0 +1,150 @@
+<html>
+<body>
+	<wicket:extend>
+		<div class="row" id="content">
+			<div class="span10 offset1">
+				<div class="hero-unit formHero">
+					<form wicket:id="updatePublication" class="form-vertical">
+						<fieldset>
+							<legend>
+								<wicket:message key="formTitle">Formulario de Publicacion</wicket:message>
+							</legend>
+							<div class="row formRow">
+								<div class="span4">
+									<div class="control-group">
+										<label class="control-label formItem" for="select01"><wicket:message
+												key="propertyType">Tipo de propiedad</wicket:message>:<span
+											class="required"> *</span> </label>
+										<div class="controls">
+											<select wicket:id="propertyType" class="span2" />
+											<div wicket:id="propertyTypeError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="select01"><wicket:message
+												key="operationType">Tipo de operacion</wicket:message>:<span
+											class="required"> *</span> </label>
+										<div class="controls">
+											<select wicket:id="operationType" class="span2" />
+											<div wicket:id="operationTypeError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="address">Direccion</wicket:message>:</label>
+										<div class="controls docs-input-sizes">
+											<input wicket:id="street" type="text"
+												class="span3" /> <span class="required"> * </span>
+											<div wicket:id="streetError" class="error" />
+											<input wicket:id="numbering" type="text" 
+												class="span3" /><span class="required"> *</span>
+											<div wicket:id="numberingError" class="error" />
+											<input wicket:id="floor" type="text" 
+												class="span3" /> <span class="required"> **</span>
+											<div wicket:id="floorError" class="error" />
+											<input wicket:id="apartment" type="text"
+												class="span3" /> <span
+												class="required"> **</span>
+											<div wicket:id="apartmentError" class="error" />
+											<input wicket:id="neighbourhood" type="text"
+												 class="span3" /> <span
+												class="required"> *</span>
+											<div wicket:id="neighbourhoodError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="currency">Moneda</wicket:message>:</label> <select
+											wicket:id="currency" class="span2" />
+											<div wicket:id="currencyError" class="error" />
+											 <label
+											class="control-label formItem" for="input01"><wicket:message
+												key="price">Precio</wicket:message>:</label>
+										<div class="controls">
+											<input wicket:id="price" type="text" class="span2" /> <span
+												class="required"> *</span>
+											<div wicket:id="priceError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="roomsQty">Cantidad de ambientes</wicket:message>:</label>
+										<div class="controls">
+											<input wicket:id="roomsQty" type="text" class="span2" /> <span
+												class="required"> *</span>
+											<div wicket:id="roomsQtyError" class="error" />
+											<br> <span class="required"><wicket:message
+													key="roomsQtyHelp">Los mismos se editan al ver el
+												detalle de la publicaci—n.</wicket:message></span><br>
+
+										</div>
+										<br> <span class="required"><wicket:message
+												key="requiredField">(*) Campo obligatorio</wicket:message>.</span><br>
+										<span class="required">(**) <wicket:message
+												key="requiredApartmentField">Campo obligatorio para
+											departamentos.</wicket:message></span>
+									</div>
+								</div>
+								<div class="span4">
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="age">Antiguedad (a–o/s)</wicket:message>:</label>
+										<div class="controls">
+											<input wicket:id="age" type="text" class="span2" /> <span
+												class="required"> *</span>
+											<div wicket:id="ageError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="coveredSurface">Superficie cubierta</wicket:message>:</label>
+										<div class="controls">
+											<input wicket:id="coveredSurface" type="text" class="span2" />
+											<span class="required"> *</span>
+											<div wicket:id="coveredSurfaceError" class="error" />
+										</div>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="uncoveredSurface">Superficie descubierta</wicket:message>:</label>
+										<div class="controls">
+											<input wicket:id="uncoveredSurface" type="text" class="span2" />
+											<span class="required"> *</span>
+											<div wicket:id="uncoveredSurfaceError" class="error" />
+										</div>
+									</div>
+
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="services">Services</wicket:message>:</label> <span
+											class="controls" wicket:id="services"> <input
+											type="checkbox" />
+										</span>
+									</div>
+									<div class="control-group">
+										<label class="control-label formItem" for="input01"><wicket:message
+												key="description">Descripcion:</wicket:message>:</label>
+										<div class="controls">
+											<textarea class="input x-large" wicket:id="description"
+												rows="3"></textarea>
+										</div>
+										<div wicket:id="descriptionError" class="error" />
+									</div>
+									<div class="control-group">
+										<div class="controls">
+											<button wicket:id="saveChanges" type="submit"
+												class="btn btn-primary">
+												<wicket:message key="saveChanges">Guardar Cambios</wicket:message>
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

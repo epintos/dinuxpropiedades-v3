@@ -1,0 +1,55 @@
+@CHARSET "UTF-8";
+
+@import "bootstrap.min.css";
+@import "header.css";
+@import "style.css";
+
+
+.formRow {
+	padding-top: 20px;
+}
+
+.hero-unit.formHero {
+	color: #F8E6E0;
+}
+
+.infoTitle {
+	font-weight: bold;
+}
+
+fieldset {
+	padding-bottom: 20px;
+}
+
+fieldset legend.formTitle {
+	color: #F8E6E0;
+}
+
+#photoInput{
+	color: #F8E6E0;
+}
+
+ul.photos{
+	  list-style-type: none;
+}
+
+ul.photos li{
+	margin-bottom:15px;
+	margin-left:10px;
+	margin-right:10px
+}
+
+.photos img{
+	width:150px;
+	height:150px;
+}
+
+
+.mainPublicationPhoto{
+	width:300px;
+	height:268px;
+}
+
+#deletePhotos{
+	margin-left:0px;
+}

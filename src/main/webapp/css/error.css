@@ -1,0 +1,11 @@
+@CHARSET "ISO-8859-1";
+
+@import "bootstrap.min.css";
+@import "header.css";
+@import "style.css";
+
+img.errorImg{
+
+	padding-left:50px;
+	padding-top:30px;
+}

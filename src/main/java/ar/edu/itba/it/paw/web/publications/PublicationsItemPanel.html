@@ -1,0 +1,41 @@
+<html>
+<body>
+	<wicket:panel>
+		<wicket:extend>
+			<wicket:enclosure child="editInformation">
+				<i class="icon-edit"></i>
+				<a href="#" wicket:id="editInformation"><wicket:message
+						key="editInformation">Editar Información</wicket:message></a>
+				<br>
+				<i class=" icon-picture"></i>
+				<a href="#" wicket:id="editPhotos"><wicket:message
+						key="editPhotos">Editar Fotos</wicket:message></a>
+				<br>
+				<i class=" icon-edit"></i>
+				<a href="#" wicket:id="editRooms"><wicket:message
+						key="editRooms">Editar Ambientes</wicket:message></a>
+				<br>
+				<wicket:enclosure child="activate">
+					<i class="icon-upload"></i>
+					<a href="#" wicket:id="activate"><wicket:message key="activate">Activar</wicket:message></a>
+					<br>
+				</wicket:enclosure>
+				<wicket:enclosure child="cancel">
+					<i class="icon-download"></i>
+					<a href="#" wicket:id="cancel"><wicket:message key="cancel">Cancelar</wicket:message></a>
+					<br>
+				</wicket:enclosure>
+				<wicket:enclosure child="reserve">
+					<i class="icon-share"></i>
+					<a href="#" wicket:id="reserve"><wicket:message key="reserve">Reservar</wicket:message></a>
+					<br>
+				</wicket:enclosure>
+				<wicket:enclosure child="sell">
+					<i class="icon-check"></i>
+					<a href="#" wicket:id="sell"><wicket:message key="sell">Vender</wicket:message></a>
+				</wicket:enclosure>
+			</wicket:enclosure>
+		</wicket:extend>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<html>
+<body>
+	<wicket:extend>
+		<div class="row" id="content">
+			<div class="span10 offset1">
+				<div class="hero-unit formHero">
+					<fieldset>
+						<legend class="formTitle">
+							<wicket:message key="editRooms">Edición de ambientes</wicket:message>
+						</legend>
+					</fieldset>
+					<div class="row formRow">
+						<div class="span6">
+							<form class="form-vertical" wicket:id="addRoomForm">
+								<div class="control-group">
+									<label class="control-label" for="select01"><wicket:message
+											key="room">Ambiente</wicket:message>:<span class="required">
+											*</span> </label>
+									<div class="controls">
+										<select wicket:id="roomType" class="span2" />
+										<div wicket:id="roomTypeError" class="error" />
+									</div>
+									<label class="control-label" for="input01"><wicket:message
+											key="length">Largo</wicket:message>:</label>
+									<div class="controls">
+										<input type="text" wicket:id="length" class="span2" /> <span
+											class="required"> *</span>
+										<div wicket:id="lengthError" class="error" />
+									</div>
+									<label class="control-label" for="input01"><wicket:message
+											key="width">Ancho</wicket:message>:</label>
+									<div class="controls">
+										<input type="text" wicket:id="width" class="span2" /> <span
+											class="required"> *</span>
+										<div wicket:id="widthError" class="error" />
+									</div>
+									<br>
+									<div class="controls">
+										<button wicket:id="add" type="submit" class="btn btn-primary">
+											<wicket:message key="add">Agregar</wicket:message>
+										</button>
+										<span class="required"><wicket:message
+												key="requiredField">(*) Campo obligatorio</wicket:message>.</span><br>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+					<fieldset>
+						<legend class="formTitle">
+							<wicket:message key="removeRooms">Eliminar Ambientes</wicket:message>
+						</legend>
+					</fieldset>
+					<div class="row formRow">
+						<div class="span4">
+							<p wicket:id="emptyRooms">No se encontraron resultados.</p>
+							<ul>
+								<li wicket:id="room"><span wicket:id="name"></span> <span
+									wicket:id="width"></span> x <span wicket:id="length"></span><a
+									href="#" wicket:id="delete"> <i class="icon-trash icon-white"></i></a></li>
+							</ul>
+						</div>
+					</div>
+					<br />
+					<a href="#" wicket:id="toPublication"><wicket:message
+							key="toPublication">Ver Publicación</wicket:message></a>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

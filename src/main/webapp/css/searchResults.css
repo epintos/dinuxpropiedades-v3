@@ -1,0 +1,35 @@
+@CHARSET "UTF-8";
+
+@import "bootstrap.min.css";
+@import "header.css";
+@import "welcome.css";
+@import "style.css";
+.searchItem {
+	background-color: #6C7F8F;
+}
+.hero-unit.searchItem {
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+.hero-unit a {
+	color: #F8E6E0;
+}
+.infoTitle {
+	font-weight: bold;
+}
+img.mainPhoto {
+	width: 130px;
+	height: 120px;
+}
+/*Accordion*/
+#pubTitle {
+	background: #6C7F8F;
+	/*	border: 1px solid black;*/
+}
+#pubTitle a span {
+	color: black;
+}
+#div1 {
+	background: #6C7F8F;
+	/*	border: 1px solid black;*/
+}

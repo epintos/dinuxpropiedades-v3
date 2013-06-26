@@ -1,0 +1,242 @@
+<html>
+<head>
+<wicket:head>
+	<!-- 	<script type="text/javascript" src="js/fancybox.js"></script> -->
+		<link rel="stylesheet" type="text/css" href="css/carousel.css" />
+</wicket:head>
+</head>
+<body>
+	<wicket:extend>
+		<div class="span10 offset1">
+			<div class="hero-unit formHero">
+				<div class="row">
+					<div class="span4">
+						<ul class="thumbnails">
+							<li class="span4">
+								<div class="behind">
+									<div class="badge" wicket:id="banner"></div>
+									<a href="#" class="thumbnail"> <img wicket:id="mainPhoto"
+										class="mainPublicationPhoto" src="#" alt="">
+									</a>
+								</div>
+								<p>
+									<span class="infoTitle"><wicket:message
+											key="description">Descripción</wicket:message>:</span>
+								</p>
+								<p>
+									<span wicket:id="description">Descripción de la
+										publicación</span>
+								</p>
+							</li>
+							<li class="span4"><a wicket:id="mapLink" class="thumbnail"
+								target="_blank" href="#"> <img wicket:id="mapImage" src="#"
+									alt="" />
+							</a></li>
+						</ul>
+						<div class="span9">
+							<wicket:enclosure child="publicatorPublications">
+								<i class="icon-list-alt icon-white"></i>
+								<a wicket:id="publicatorPublications" href="#"><wicket:message
+										key="publicatorPublications">Ver
+							publicaciones del anunciante</wicket:message></a>
+							</wicket:enclosure>
+						</div>
+					</div>
+					<div class="span4">
+						<div wicket:id="publicationAgencyPanel" />
+						<div class="span4">
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="operationType">Operación</wicket:message>:</span> <span
+									wicket:id="operationType">Venta</span>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="propertyType">Inmueble</wicket:message>:</span> <span
+									wicket:id="propertyType">Departamento</span>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message key="status">Estado</wicket:message>:</span>
+								<span wicket:id="status">Disponible</span>
+							</p>
+							<wicket:enclosure child="logHistory">
+								<div>
+									<i class="icon-edit icon-white"></i> <a wicket:id="logHistory"
+										href="#"><wicket:message key="logHistory">Historial de cambios de estado</wicket:message></a>
+								</div>
+							</wicket:enclosure>
+							<p>
+								<span class="infoTitle"><wicket:message key="address">Dirección</wicket:message>:</span>
+								<span wicket:id="street">Calle</span> <span
+									wicket:id="numbering">123</span>
+								<wicket:enclosure child="floor">
+									<span class="infoTitle"> <wicket:message key="floor">Piso</wicket:message>:
+									</span>
+									<span wicket:id="floor">4</span>
+									<br>
+									<span class="infoTitle"><wicket:message key="apartment">Dep</wicket:message>:</span>
+									<span wicket:id="apartment">F</span>
+								</wicket:enclosure>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="neighbourhood">Barrio</wicket:message>:</span> <span
+									wicket:id="neighbourhood">Capital Federal</span>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="coveredSurface">Superficie Cubierta</wicket:message>:</span> <span
+									wicket:id="coveredSurface">120</span> m2
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="uncoveredSurface">Superficie Descubierta</wicket:message>:</span>
+								<span wicket:id="uncoveredSurface">60</span> m2
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message key="age">Antigúedad</wicket:message>:</span>
+								<span wicket:id="age">10</span>
+								<wicket:message key="ageUnit">a–o/s</wicket:message>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message key="roomsQty">Cantidad de Ambientes</wicket:message>:</span>
+								<span wicket:id="roomsQty">5</span>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message key="rooms">Ambientes</wicket:message>:</span>
+							</p>
+							<p wicket:id="emptyRooms">No hay Ambientes.</p>
+							<ul>
+								<li wicket:id="room"><span wicket:id="name"></span> <span
+									wicket:id="width"></span> x <span wicket:id="length"></span></li>
+							</ul>
+							<wicket:enclosure>
+								<div>
+									<i class="icon-edit icon-white"></i> <a wicket:id="editRooms"
+										href="#"><wicket:message key="edit">Editar Ambientes</wicket:message></a>
+								</div>
+							</wicket:enclosure>
+							<p>
+								<span class="infoTitle"><wicket:message key="services">Servicios</wicket:message>:</span>
+							</p>
+							<p wicket:id="emptyServices">No hay servicios.</p>
+							<ul>
+								<li wicket:id="service"><span wicket:id="name"></span></li>
+							</ul>
+
+							<p>
+								<span class="infoTitle"><wicket:message key="price">Precio</wicket:message>:</span>
+								<span wicket:id="currency"></span> <span wicket:id="price">50000</span>
+							</p>
+							<p>
+								<span class="infoTitle"><wicket:message
+										key="pricePerSquareMeter">Precio por m2</wicket:message>:</span> <span
+									wicket:id="currency2"></span> <span
+									wicket:id="pricePerSquareMeter">500</span>
+							</p>
+							<p>
+								<wicket:message key="visitCount">
+								Esta publicación ha sido visitada</wicket:message>
+								<span wicket:id="visitCount">3</span>
+								<wicket:message key="times">
+								veces</wicket:message>
+								.
+							</p>
+						</div>
+					</div>
+
+					<div class="span9">
+
+						<fieldset>
+							<legend class="formTitle">
+								<wicket:message key="photos">Fotos</wicket:message>
+							</legend>
+						</fieldset>
+						<p wicket:id="emptyPhotos">No hay más fotos cargadas.</p>
+						<div id="fcontent">
+							<br />
+							<ul wicket:id="myCarousel" class="jcarousel-skin-tango">
+								<li wicket:id="photos"><img wicket:id="photo" alt=""
+									src="#" width="75" height="75" /></li>
+							</ul>
+						</div>
+					</div>
+					<wicket:enclosure>
+						<div class="span9">
+							<i class=" icon-edit icon-white"></i> <a href="#"
+								wicket:id="editPhotos"><wicket:message key="edit">Editar Fotos</wicket:message></a>
+						</div>
+					</wicket:enclosure>
+
+					<div class="span9">
+						<form wicket:id="commentForm" class="form-vertical" method="POST">
+							<fieldset>
+								<legend class="formTitle">
+									<wicket:message key="insterested">Estás interesado?</wicket:message>
+								</legend>
+								<div class="row formRow">
+									<wicket:enclosure child="name">
+										<div class="row">
+											<div class="span3">
+												<div class="control-group">
+													<label class="control-label" for="input01"><wicket:message
+															key="name">Nombre</wicket:message>:</label>
+													<div class="controls">
+														<input type="text" wicket:id="name" class="span2" /> <span
+															class="required"> *</span>
+														<div wicket:id="nameError" class="error" />
+													</div>
+												</div>
+											</div>
+											<div class="span3">
+												<div class="control-group">
+													<label class="control-label" for="input01"><wicket:message
+															key="email">Email</wicket:message>:</label>
+													<div class="controls">
+														<input type="text" wicket:id="email" class="span2" /> <span
+															class="required"> *</span>
+														<div wicket:id="emailError" class="error" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row">
+											<div class="span3">
+												<div class="control-group">
+													<label class="control-label" for="input01"><wicket:message
+															key="phone">Teléfono</wicket:message>:</label>
+													<div class="controls">
+														<input type="text" wicket:id="phone" class="span2" /> <span
+															class="required"> *</span>
+														<div wicket:id="phoneError" class="error" />
+													</div>
+												</div>
+											</div>
+										</div>
+									</wicket:enclosure>
+									<div class="row">
+										<div class="span7">
+											<div class="control-group">
+												<label class="control-label" for="input01"><wicket:message
+														key="comment">Comentario</wicket:message>:</label>
+												<div class="controls">
+													<textarea class="input x-large" id="description" rows="3"
+														cols="9" wicket:id="comment"></textarea>
+												</div>
+												<button wicket:id="send" type="submit"
+													class="btn btn-primary">Enviar</button>
+												<span class="required"><wicket:message
+														key="requiredField">(*) Campo obligatorio</wicket:message>.</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</wicket:extend>
+</body>
+</html>

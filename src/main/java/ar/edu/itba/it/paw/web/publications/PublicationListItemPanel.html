@@ -1,0 +1,55 @@
+<html>
+<body>
+	<wicket:panel>
+		<div class="row">
+			<div class="span8">
+				<div class="hero-unit searchItem">
+					<div class="row">
+						<div class="span2">
+							<ul class="thumbnails">
+								<li class="span2">
+									<div class="behind">
+										<div class="badge" wicket:id="banner"></div>
+										<a href="#" class="thumbnail"> <img wicket:id="mainPhoto"
+											class="mainPhoto" src="#" alt="">
+										</a>
+									</div>
+								</li>
+							</ul>
+						</div>
+						<div class="span4">
+							<span class="infoTitle"><wicket:message key="status">Estado</wicket:message>:</span>
+							<span wicket:id="status">Disponible</span> <br> <span
+								class="infoTitle"><wicket:message key="operationType">Operación</wicket:message>:</span>
+							<span wicket:id="operationType">Venta</span> <br> <span
+								class="infoTitle"><wicket:message key="propertyType">Inmueble</wicket:message>:</span>
+							<span wicket:id="propertyType">Departamento</span> <br> <span
+								class="infoTitle"><wicket:message key="address">Dirección</wicket:message>:</span>
+							<span wicket:id="street">Calle</span> <span wicket:id="numbering">123</span>
+							<wicket:enclosure child="floor">
+								<span class="infoTitle"><wicket:message key="floor">Piso</wicket:message>:</span>
+								<span wicket:id="floor">5</span>
+								<span class="infoTitle"><wicket:message key="apartment">Dep</wicket:message>:</span>
+								<span wicket:id="apartment">F</span>
+							</wicket:enclosure>
+							<br> <span class="infoTitle"><wicket:message
+									key="neighbourhood">Barrio</wicket:message>:</span> <span
+								wicket:id="neighbourhood">Barrio</span> <br> <span
+								class="infoTitle"><wicket:message key="price">Precio</wicket:message>:</span>
+							<span wicket:id="currency"></span> <span wicket:id="price">50000</span>
+							<br>
+							<span class="infoTitle"><wicket:message key="pricePerSquareMeter">Precio por m2</wicket:message>:</span>
+							<span wicket:id="currency2"></span> <span wicket:id="pricePerSquareMeter">500</span>
+							<br> <i class="icon-plus-sign"></i> <a href="#"
+								wicket:id="moreInformation"><wicket:message key="moreInfo">Más
+											Información</wicket:message></a> <br>
+							<wicket:child />
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</wicket:panel>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:wicket="http://wicket.apache.org/">
+<head>
+<link rel="stylesheet" type="text/css" href="css/viewPublication.css" />
+<link rel="stylesheet" type="text/css" href="css/newPublication.css" />
+<link rel="stylesheet" type="text/css" href="css/register.css" />
+<link rel="stylesheet" type="text/css" href="css/welcome.css" />
+<link rel="stylesheet" type="text/css" href="css/searchResults.css" />
+<script type="text/javascript" src="js/jquery.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="row" id="header">
+			<div class="span4">
+				<a wicket:id="home" href="#" class="logo">Dinux Propiedades</a>
+			</div>
+			<div class="span8">
+				<div class="navbar">
+					<div class="navbar-inner" id="logBar">
+						<div class="container">
+							<div wicket:id="headerPanel" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="row" id="content">
+			<wicket:child />
+		</div>
+		<div class="row">
+			<div class="span6 offset3">
+				<img wicket:id="advert" />
+			</div>
+		</div>
+		<div class="row" id="footer"><wicket:message key="footer">Dinux Propiedades - Proyecto de
+			Aplicaciones web</wicket:message></div>
+	</div>
+</body>
+</html>
