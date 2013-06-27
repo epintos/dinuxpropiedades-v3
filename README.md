@@ -12,8 +12,11 @@ The idea was to make a web application using:
 - PostgreSQL.
 - Deploy in Tomcat.
 
-============================
 
-Migration scripts to update from Version 2 in src/test/java/resources folder.
+## Instructions
 
-Execute mvn clean package to generate war.
+Migration scripts to update from Version 2 are in `src/test/java/resources`.
+
+To generate war execute:
+
+        mvn clean package
